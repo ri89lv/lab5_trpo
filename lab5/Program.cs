@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
+   
     class Program
     {
-        
+        static void Main(string[] args)
+        {
+            
+        }
     }
 }
