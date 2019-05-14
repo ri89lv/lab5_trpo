@@ -38,7 +38,15 @@ namespace lab5
                 if (array[i] > max)
                     max = array[i]; 
             }
-            return max;
+
+            for (i = 0; i < array.Length; i++)
+            {
+                if (array[i] > int.MaxValue) throw new ArgumentException("Некорректный ввод. Выход за пределы допустимого значения.");
+                if (array[i] < int.MaxValue) throw new ArgumentException("Некорректный ввод. Выход за пределы допустимого значения.");
+                if (array [i]<0) throw new ArgumentException("Некорректный ввод. Введено отрицательное число.");
+            }
+
+                return max;
         }
 
        
